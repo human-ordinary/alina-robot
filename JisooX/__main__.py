@@ -28,14 +28,14 @@ from JisooX.modules.connection import connect_button
 
 PM_START_TEXT = """
 `ʜᴀɪɪ` *{}*🌻
-`ɪ'ᴍ` *{}* `ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!ʜɪᴛ` /help `ᴛᴏ sᴇᴇ ᴀʟʟ ᴍʏ ғᴇᴀᴛᴜʀᴇs`[🌻](https://telegra.ph/file/24aa5419412a3719726c6.jpg)
+`ɪ'ᴍ` *{}* `ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!ʜɪᴛ` /help `ᴛᴏ sᴇᴇ ᴀʟʟ ᴍʏ ғᴇᴀᴛᴜʀᴇs`[🌻](https://telegra.ph/file/d40bb8d575356a983d395.jpg)
 `ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ` [{}](tg://user?id={})
 """
 
 
 HELP_STRINGS = """
-`ʜɪ`, `ɪ'ᴍ ᴀʟɪɴᴀ`
-`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ`[🌻](https://telegra.ph/file/8b913a58af3c145445473.jpg)
+`ʜɪ`, `ɪ'ᴍ 𝐋𝐞𝐯𝐢 𝐀𝐜𝐤𝐞𝐫𝐦𝐚𝐧`
+`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ`[🌻](https://telegra.ph/file/d40bb8d575356a983d395.jpg)
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 
@@ -174,13 +174,15 @@ def send_start(bot, update):
             text="➕️ ᴀᴅᴅ ᴀʟɪɴᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/{}?startgroup=true".format(bot.username)),
     ],
     [
-        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rizexproject"),
+        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/chlenterasajak"),
         InlineKeyboardButton(
-            text="ᴏᴡɴᴇʀ ʙᴏᴛ", url=f"https://t.me/rizexx"
+            text="ᴏᴡɴᴇʀ ʙᴏᴛ", url=f"https://t.me/iyainyabre"
         ),
     ],
     [
         InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(
+             text="𝙶𝚁𝙾𝚄𝙿", url="https://t.me/Randomchatanonymouss"),
     ],
 ]
 
@@ -283,7 +285,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ?",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ",url="https://t.me/rizexx")]]))
+                                                [InlineKeyboardButton(text="ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ",url="https://t.me/iyainyabre")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
